@@ -23,7 +23,6 @@
   font-variant:initial;
 }    
 
-/* transition: .33s all ease-out;  */
 
 a:hover{
   text-decoration: none;
@@ -59,6 +58,10 @@ body.news{
   background: url(../images/bg4.png); 
   overflow: hidden;
 }
+body.login{
+  background: url(../images/bg-login.png); 
+  overflow: hidden;
+}
 .d-after{
   content: "";
   position: absolute;
@@ -82,6 +85,16 @@ body.news{
   background-position: center !important;
   background: url(../images/bg2-2.png); 
   background-size: 100% auto !important;
+  background-repeat: no-repeat !important; 
+  height: calc(100vh); 
+  width: 100%;
+  z-index: 5;
+}
+.login-bg{ 
+  position: absolute;
+  background-position: left center !important;
+  background: url(../images/login-bg1.png); 
+  background-size: 80%  auto !important;
   background-repeat: no-repeat !important; 
   height: calc(100vh); 
   width: 100%;
@@ -510,3 +523,102 @@ main{
   height: 19px;
   top: 20px;
 }
+.login-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+  padding: 0px 50px 50px
+}
+.login-box h1{ 
+  text-align: center;
+  font-family: Kanit-Regular;  
+  font-size: 32px;
+  line-height: 48px; 
+  text-transform: uppercase; 
+  color: #487A47;
+  margin-bottom: 20px;
+}
+.login-box form label{
+  font-family: Kanit-Regular;  
+  font-size: 20px;
+  line-height: 30px; 
+  color: #B0B5BA;
+}
+.login-box form input{
+  font-family: Kanit-Regular;   
+  height: 52px; 
+  background: url(../images/border-text1.png) #0A100A;
+  background-repeat: no-repeat !important; 
+  background-position:  center center !important;
+  background-size: auto 52px !important; 
+  border: none;
+  margin-bottom: 20px;
+}
+.login-box form input:focus{ 
+  outline: 2px solid #337E36;
+  background: url(../images/border-text1.png) #0A100A;
+}
+.login-box form .forgot{
+  text-align: center;
+  font-family: Kanit-Regular;   
+  font-size: 20px;
+  line-height: 30px; 
+  text-decoration-line: underline; 
+  color: #487A47;
+}
+.login-box form .btn{
+  width: 100%; 
+  background-repeat: no-repeat !important; 
+  background-position:  center center !important;
+  background-size: 100% auto !important; 
+  text-align: center;
+  font-family: Kanit-Regular;  
+  display: block; 
+  font-size: 24px;
+  line-height: 36px; 
+  color: #D6D6D6;
+  transition: .33s all ease-out;
+}
+.login-box form .btn-login{ 
+  background: url(../images/login-btn1.png); 
+}
+.login-box form .btn-register{ 
+  background: url(../images/login-btn2.png); 
+  color: #929792;
+}
+
+.login-box form .btn:hover{ 
+  opacity: .75;
+}
+.login-box form .btn-facebook{ 
+  background: url(../images/facebook-btn1.png); 
+  color: #D6D6D6;
+}
+.login-box form .btn-facebook img{ 
+  height: 25px;
+  margin-top: -5px;
+}
+.login .login-box form .social-media img{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+small{
+  position: absolute;
+  z-index: 111;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 5px; 
+  font-size: 12px;
+  line-height: 18px; 
+  color: #365235;
+  font-family: Kanit-Regular;   
+}
+small span{ 
+  color: #636364;  
+}
+
+
+
+/* transition: .33s all ease-out;  */
