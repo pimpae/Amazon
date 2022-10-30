@@ -618,6 +618,49 @@ small{
 small span{ 
   color: #636364;  
 }
+.tabs-news{
+  border: none;
+  border-bottom: 0px;
+} 
+.tabs-news li{
+  width: 20%;
+  height: 40px; 
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  border-radius: 0px !important;
+} 
+.tabs-news li a{ 
+  height: 40px; 
+  background-repeat: no-repeat !important; 
+  background-position:  center center !important;
+  background-size: 100% auto !important; 
+  background: url(../images/plate-menu1.png); 
+  background-color: transparent !important;
+  border-radius: 0px !important;
+  border: none;font-size: 16px;
+  line-height: 24px;
+  font-family: Kanit-Regular;   
+  color: #549556;
+}  
+.tabs-news li a.active{ 
+  background-color: transparent !important; 
+  border: none; 
+  color: #fff !important;
+  background: url(../images/plate-menu2.png); 
+}
+.tabs-news li a:hover{ 
+  background-color: transparent !important; 
+  border: none; 
+  color: #fff !important;
+  background: url(../images/plate-menu2.png); 
+}
+.tabs-news li:first-child{ 
+  padding-left: 0px; 
+}
+.tabs-news li:last-child{ 
+  padding-right: 0px; 
+}
 
 
 
