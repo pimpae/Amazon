@@ -21,7 +21,14 @@
   src: url(../fonts/Kanit-Regular.ttf);
   font-style: normal;
   font-variant:initial;
+}     
+@font-face{
+  font-family: BebasNeue-Regular;
+  src: url(../fonts/BebasNeue-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
 }    
+
 
 
 a:hover{
@@ -121,6 +128,9 @@ body.home header{
 }
 body.news header{  
   margin-bottom: 90px;
+}
+body.game-info header{  
+  margin-bottom: 100px;
 }
 .navbar .navbar-collapse{
   padding-left: 100px;
@@ -760,9 +770,8 @@ small span{
   margin-top: 5px;
 }
 .character-box > div > div{
-  margin-top: 10px;
-  margin-bottom: 10px;
-
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .img-character{
   height: 116px;
@@ -773,15 +782,84 @@ small span{
   background: url(../images/new-border1.png);  
   padding: 4px;
   overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
 } 
 .img-character img{
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
+.character-des{
+  background-repeat: no-repeat !important; 
+  background-position: top right !important;
+  background-size: 1px auto !important; 
+  background: url(../images/line1.png);   
+} 
+.character-des h3{
+  background-repeat: no-repeat !important; 
+  background-position: center !important;
+  background-size: auto 76px !important; 
+  background: url(../images/Charac-bg1.png);  
+  height: 76px; 
+  font-size: 40px;
+  line-height: 48px; 
+  color: #D6D6D6;
+  font-family: BebasNeue-Regular;    
+  text-transform: uppercase;
+  padding: 14px 26px;
+} 
+.character-des p{ 
+  font-family: Kanit-Regular;  
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200.5%; 
+  color: #7C7A7A;
+}
+img.character1{
+  height: 540px;
+}
+.vid2{
+  width: 100%; 
+  background-position: center !important;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+  background-size: contain;
+  background: url(../images/slide.png); 
+  padding: 20px 30px 25px;
+  position: relative;
+  z-index: 11;
+}
 
+.video {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px; 
+}
+.wrapper{
+  display:table;
+  width:auto;
+  position:relative; 
+}
+.playpause {
+  background-image:url(../images/play.png);
+  background-repeat:no-repeat;
+  width: 38px;
+  height: 38px;
+  position:absolute;
+  left:0%;
+  right:0%;
+  top:0%;
+  bottom:0%;
+  margin:auto;
+  background-size:contain;
+  background-position: center;
+}
 
+/* transition: .33s all ease-out;  
 
-
-
-/* transition: .33s all ease-out;  */
+  
+  font-family: Kanit-Regular;  
+  font-family: BebasNeue-Regular;
+  
+  */

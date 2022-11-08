@@ -59,13 +59,44 @@
 	<main>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xl-2 col-12">
-					<img src="images/character1.png" alt="">
+				<div class="col-xl-3 col-12">
+					<img src="images/character1.png"  class="character1" alt="character1">
 				</div>
-				<div class="col-xl-8 col-12">  
-					 
+				<div class="col-xl-6 col-12 character-des">  
+					<div class="clearfix mb-x">&nbsp;</div>
+					<div class="clearfix mb-x">&nbsp;</div>
+					<h3>
+						Character Name
+					</h3>
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+					</p>
+					<div class="clearfix mb-x">&nbsp;</div>
+					<div class="row">
+						<div class="col-xl-6 col-12">
+							<div class="vid">
+								<div class="wrapper">
+									<video class="video">
+										<source src="images/WorldAftermath.mp4" type="video/mp4" />
+									</video>
+									<div class="playpause"></div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-12">
+							<div class="vid">
+								<div class="wrapper">
+									<video class="video">
+										<source src="images/WorldAftermath.mp4" type="video/mp4" />
+									</video>
+									<div class="playpause"></div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-xl-2 col-12 character-box">  
+				<div class="col-xl-3 col-12 character-box">  
+					<div class="clearfix mb-x">&nbsp;</div> 
 					<div class="row">
 						<div class="col-6">
 							<a href="#">
@@ -131,10 +162,7 @@
 		<a href="news.html" class="arrow-l active"></a>
 		<a href="game-detail.html" class="arrow-r"></a>
 
-	</main>
-	
-
-	
+	</main> 
 
 	<footer>
 		<ul>
@@ -166,7 +194,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
 	 
  
-	 
+	<script>
+		$('.video').parent().click(function () {
+			if($(this).children(".video").get(0).paused){
+				$(this).children(".video").get(0).play();
+				$(this).children(".playpause").fadeOut();
+			}else{
+				$(this).children(".video").get(0).pause();
+				$(this).children(".playpause").fadeIn();
+			}
+		});
+	</script>
+	
 	
 </body>
 </html>
