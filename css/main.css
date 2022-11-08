@@ -62,6 +62,10 @@ body.login{
   background: url(../images/bg-login.png); 
   overflow: hidden;
 }
+body.game-info{
+  background: url(../images/game-info2.png); 
+  overflow: hidden;
+}
 .d-after{
   content: "";
   position: absolute;
@@ -101,13 +105,22 @@ body.login{
   z-index: 5;
 }
 header{  
-  position: relative;
-  border-top: 34px solid rgba(0, 0, 0, 0.8); 
+  position: relative; 
+  padding-top: 34px;
   z-index: 11;
 }
-body.home header{ 
-  height: 217px;  
-  background: rgba(0, 0, 0, 0.6);
+body header{ 
+  height: 98px;   
+  background-position: top center !important;
+  background: url(../images/bg2-2.png); 
+  background-size: 100% auto !important;
+  background-repeat: no-repeat !important; 
+} 
+body.home header{  
+  margin-bottom: 120px;
+}
+body.news header{  
+  margin-bottom: 90px;
 }
 .navbar .navbar-collapse{
   padding-left: 100px;
@@ -138,6 +151,10 @@ body.home header{
   color: #D6D6D6; 
   border-top: 2px solid #337E36;
 } 
+.navbar .navbar-collapse .navbar-nav .nav-item.active2 .nav-link{  
+  color: #365235;  
+} 
+
 
 footer{
   position: absolute;
@@ -146,7 +163,7 @@ footer{
   width: 100%;
   height: 65px;
   border-top: 1px solid #374137;
-  z-index: 11;
+  z-index: 33;
 }
 footer ul{
   display: flex;
@@ -213,7 +230,18 @@ footer ul li.active a p{
   background: #337E36;
   border: 1px solid #65E46A;
   z-index: 5;
+} 
+.social-mediaf{
+  position: absolute;
+  right: 0;
+  bottom: 10px; 
+} 
+.social-mediaf a img{
+  width: 36px;
+  margin-right: 30px;
 }
+
+
 .social-media{
   line-height: 30px;
   margin-top: 20px;
@@ -528,7 +556,11 @@ main{
   justify-content: center;
   align-items: center;
   height: 90vh; 
-  padding: 0px 50px 50px
+  padding: 0px 50px 50px;
+}
+.login-box img.logo{
+  max-height: 200px; 
+  margin-top: -60px !important;
 }
 .login-box h1{ 
   text-align: center;
@@ -661,6 +693,94 @@ small span{
 .tabs-news li:last-child{ 
   padding-right: 0px; 
 }
+.news-ul{
+  padding-left: 0px;
+  list-style: none;
+  margin-top: 30px;
+}
+.news-ul li{
+  display: flex;
+  position: relative; 
+  padding-bottom: 12px;
+  padding-top: 12px;
+  background-repeat: no-repeat !important; 
+  background-position:  bottom center !important;
+  background-size: 100% 1px !important; 
+  background: url(../images/line5.png); 
+}
+.news-ul li div:nth-child(1){ 
+  font-size: 15px;
+  line-height: 22px;
+  font-family: Kanit-Regular;    
+  color: #549556;
+  margin-right: 30px;
+} 
+.news-ul li div:nth-child(2) a{ 
+  font-family: Kanit-Regular; 
+  font-size: 15px;
+  line-height: 22px; 
+  color: #AFC0AF;
+}
+.news-ul li div:nth-child(3){
+  position: absolute;
+  right: 0;
+  font-family: Kanit-Regular;   
+  font-size: 15px;
+  line-height: 22px; 
+  color: #AFC0AF; 
+}
+.img-view{
+  background-repeat: no-repeat !important; 
+  background-position: center !important;
+  background-size: 100% 100% !important; 
+  background: url(../images/slide1.png);  
+  height: 410px;
+  padding: 21px 21px 27px;
+}
+.img-view img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img-patch{
+  height: 170px;
+  background-repeat: no-repeat !important; 
+  background-position: center !important;
+  background-size: 100% 100% !important; 
+  background: url(../images/new-border1.png);  
+  padding: 4px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+} 
+.img-patch h5{
+  font-family: Kanit-Regular;   
+  font-size: 14px;
+  line-height: 21px; 
+  color: #6A6A6A;
+  margin-top: 5px;
+}
+.character-box > div > div{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.img-character{
+  height: 116px;
+  width: 116px;
+  background-repeat: no-repeat !important; 
+  background-position: center !important;
+  background-size: 116px 116px !important; 
+  background: url(../images/new-border1.png);  
+  padding: 4px;
+  overflow: hidden;
+} 
+.img-character img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 
 
