@@ -130,7 +130,7 @@ body.news header{
   margin-bottom: 90px;
 }
 body.game-info header{  
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .navbar .navbar-collapse{
   padding-left: 100px;
@@ -825,16 +825,16 @@ img.character1{
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   background-size: contain;
-  background: url(../images/slide.png); 
-  padding: 20px 30px 25px;
+  background: url(../images/clip-bg1.png); 
+  padding: 12px 11px 10px 13px;
   position: relative;
   z-index: 11;
 }
 
-.video {
+.vid2 .video {
   width: 100%;
   border: 1px solid black;
-  border-radius: 5px; 
+  border-radius: 0px; 
 }
 .wrapper{
   display:table;
