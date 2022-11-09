@@ -72,23 +72,19 @@ body.news{
   overflow: hidden;
 } 
 body.login{
-  background: url(../images/bg-login.png); 
+  background: url(../images/login-bg1.png)  , url(../images/bg2-2.png) , url(../images/d-after.png)   , url(../images/bg-login.png) ; 
+  background-size: 80%  auto , 100% auto , 100% auto , 100% auto  !important;
+  background-position: left center , center , center , center top !important;
+  background-repeat: no-repeat , no-repeat , no-repeat !important;
   overflow: hidden;
-}
+}  
 body.game-info{
-  background: url(../images/game-info2.png); 
+  background: url(../images/bg2-2.png) , url(../images/d-after.png)   , url(../images/game-info2.png) ; 
+  background-size: 100% auto , 100% auto , 100% auto  !important;
+  background-position: center , center , center !important;
+  background-repeat: no-repeat , no-repeat , no-repeat !important;
   overflow: hidden;
-}   
-.login-bg{ 
-  position: absolute;
-  background-position: left center !important;
-  background: url(../images/login-bg1.png); 
-  background-size: 80%  auto !important;
-  background-repeat: no-repeat !important; 
-  height: calc(100vh); 
-  width: 100%;
-  z-index: 5;
-}
+}  
 header{  
   position: relative; 
   padding-top: 34px;
