@@ -72,9 +72,9 @@ body.news{
   overflow: hidden;
 } 
 body.login{
-  background: url(../images/login-bg1.png)  , url(../images/bg2-2.png) , url(../images/d-after.png)   , url(../images/bg-login.png) ; 
-  background-size: 80%  auto , 100% auto , 100% auto , 100% auto  !important;
-  background-position: left center , center , center , center top !important;
+  background: url(../images/login-bg1.png)  , url(../images/bg2-2.png)  , url(../images/bg-login.png) ; 
+  background-size: 80%  auto , 100% auto  , 100% auto  !important;
+  background-position: left center , center , center top !important;
   background-repeat: no-repeat , no-repeat , no-repeat !important;
   overflow: hidden;
 }  
@@ -84,6 +84,12 @@ body.game-info{
   background-position: center , center , center !important;
   background-repeat: no-repeat , no-repeat , no-repeat !important;
   overflow: hidden;
+}   
+body.account-info{
+  background: url(../images/login-bg1.png)  , url(../images/bg2-2.png)  , url(../images/bg-account.png) ; 
+  background-size: 90%  auto , 100% auto  , 100% auto  !important;
+  background-position: left top , center , center  !important;
+  background-repeat: no-repeat , no-repeat , no-repeat !important; 
 }  
 header{  
   position: relative; 
@@ -498,6 +504,9 @@ main{
   padding-top: 15px;
   position: relative;
 }
+.file-program li a i{
+  display: none;
+}
 .file-program li span{
   padding-left: 30px;
   padding-right: 30px;
@@ -519,11 +528,13 @@ main{
   position: absolute;
   right: 0;
   padding-right: 25px; 
+  transition: .33s all ease-out;
+} 
+.file-program li a span{  
   font-family: Kanit-Regular;  
   font-size: 20px; 
   text-decoration-line: underline; 
-  color: #65E46A;
-  transition: .33s all ease-out;
+  color: #65E46A !important;
 }
 .file-program li a:hover{  
   color: #337E36; 
@@ -567,8 +578,9 @@ main{
   background: url(../images/border-text1.png) #0A100A;
   background-repeat: no-repeat !important; 
   background-position:  center center !important;
-  background-size: auto 52px !important; 
+  background-size: 100% 52px !important; 
   border: none;
+  border-radius: 0px;
   margin-bottom: 20px;
 }
 .login-box form input:focus{ 
@@ -829,6 +841,45 @@ img.character1{
   background-size:contain;
   background-position: center;
 }
+.account-info main{
+  margin-top: 35px;
+}
+.account-info main{
+  margin-top: 35px;
+}
+.accountx h1{
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: auto 56px !important;
+  background: url(../images/Charac-bg2.png);
+  height: 56px;
+  font-size: 32px;
+  line-height: 28px;
+  color: #D6D6D6;
+  font-family: Kanit-Regular;
+  text-transform: uppercase;
+  padding: 14px 26px;
+  margin-bottom: 35px;
+}
+.accountx .p-account{
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+  background-size: 238px auto !important;
+  background: url(../images/permission1.png);
+  width: 238px;
+  height: 75px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 16px;
+  line-height: 34px; 
+  font-family: Kanit-Regular; 
+  letter-spacing: 0.16em;
+  text-transform: uppercase; 
+  color: #FFF96F;
+
+}
 
 
 
@@ -842,47 +893,69 @@ img.character1{
   */
 
 @media only screen and (max-width: 991px) { /* MOBILE */
-  footer{
-    display: none !important;
-  }  
   main {
     padding-left: 0px;
     padding-right: 0px;
     margin-top: 30px;
     position: relative;
     z-index: 20;
-  }
-  body {
-    background-position: center !important;
-    background-size: auto 100% !important;
-    background-repeat: no-repeat !important;
-    height: 100vh !important;
-  }
-  body.download{ 
-    height: 100% !important;
-  }
-  .d-after{ 
-    height: 100% !important; 
-  }
-  .d-after2{ 
-    height: 100% !important; 
-  }
-  .home-character { 
-    width: 90%; 
-    margin-top: 40px;
   } 
-  .download-bg{  
-    background-size: auto 100% !important;
-    background-repeat: no-repeat !important; 
-    height: 100% !important; 
-    width: 100%;
-    z-index: 5;
-  }
   body header{
     height: 75px;
     margin-bottom: 0px !important;
     z-index: 111 !important;
   }
+  body.home header{
+    margin-bottom: 0px !important;
+  }
+  body.home{
+    background: url(../images/d-after2.png) , url(../images/d-after.png) , url(../images/bg1.png) ; 
+    background-size: auto 100% , auto  100% , auto  100%  !important; 
+    overflow: hidden;
+  } 
+  body.download{
+    background: url(../images/bg2-2.png) , url(../images/d-after.png) , url(../images/bg2.png) ; 
+    background-size: auto 100% , auto  100% , auto  100%  !important; 
+    overflow: hidden;
+  }
+  body.news{
+    background: url(../images/bg2-2.png) , url(../images/d-after.png) , url(../images/bg4.png) ; 
+    background-size: auto 100% , auto  100% , auto  100%  !important; 
+    overflow: hidden;
+  } 
+  body.login{
+    background: url(../images/login-bg1.png)  , url(../images/bg2-2.png) , url(../images/bg-login.png) ; 
+    background-size: auto 80%   , auto 100%   , auto 100%   !important;
+    background-position: left center , center , center top !important;
+    background-repeat: no-repeat , no-repeat , no-repeat !important;
+    overflow: hidden;
+  }  
+  body.game-info{
+    background: url(../images/bg2-2.png) , url(../images/d-after.png) , url(../images/game-info2.png) ; 
+    background-size: auto 100% , auto  100% , auto  100%  !important; 
+    overflow: hidden; 
+  }  
+  header{  
+    position: relative; 
+    padding-top: 34px;
+    z-index: 11;
+  } 
+  body.download{ 
+    height: 100% !important; 
+    overflow: unset !important;
+  }
+  body.game-info{ 
+    height: 100% !important; 
+    overflow: unset !important;
+  }
+  body.news{ 
+    height: 100% !important;
+    overflow: unset !important;
+  } 
+  .home-character { 
+    width: 90%; 
+    margin-top: 40px;
+  }  
   header { 
     padding-top: 0px; 
   }
@@ -996,7 +1069,115 @@ img.character1{
     z-index: 111;
     margin-right: 10px;
   }
-  body.download { 
-    overflow: unset !important;
+  .btn-full { 
+    font-size: 20px; 
   }
+  .box-file-download { 
+    min-height: 300px; 
+  }
+  .box-file-download h3 { 
+    margin-bottom: 15px;
+  }
+  .box-file-download img {
+    width: 130px;
+  } 
+  .box-file-download h5 { 
+    font-size: 16px;  
+    margin-top: 20px;
+  }
+  .btn-download {
+    width: 100%;
+    height: 72px; 
+    position: relative;
+  }
+  .file-program li { 
+    background-size: 100% 40px !important;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 10px; 
+  }
+  .file-program li img { 
+    padding-left: 10px; 
+    top: 15px;
+    height: 11px;
+  }
+  .file-program li span {
+    padding-left: 0px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+  .file-program li span:nth-child(3) {
+    font-size: 8px;
+  }
+  .file-program li a{
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .file-program li a i{
+    display: block;
+    color: #65E46A;
+  }
+  .file-program li a span{  
+    display: none;
+  }
+  .download-spec { 
+    margin-bottom: 20px;
+  }
+  .img-view{
+    height: 200px;
+    padding: 10px;
+  }
+  .news-ul li div:nth-child(1) { 
+    margin-right: 10px;
+  }
+  .news-ul li div:nth-child(2) { 
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 70px;
+    color: #AFC0AF;
+  }
+  .tabs-news li { 
+    padding-left: 5px !important;
+    padding-right: 5px !important; 
+  }
+  .tabs-news li {
+    width: 25%; 
+  }
+  img.character1 {
+    height: unset;
+    width: 100%;
+  }
+  .character-des h3 { 
+    background-size: auto 70px !important;
+    background: url(../images/Charac-bg1.png);
+    height: 70px;
+    font-size: 30px;
+    line-height: 48px; 
+    padding: 12px 19px;
+  }
+  .character-des p { 
+    font-size: 16px;
+    line-height: 20px; 
+  }
+  footer ul{
+    display: none !important;
+  }  
+  footer{
+    position: relative;
+  }  
+  footer small{
+    position: absolute;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    z-index: 2322;
+  }
+  body.home footer{
+    position: fixed;
+    bottom: 0;
+  }  
 }
