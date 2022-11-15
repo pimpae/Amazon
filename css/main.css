@@ -23,6 +23,18 @@
   font-variant:initial;
 }     
 @font-face{
+  font-family: Athiti-Regular;
+  src: url(../fonts/Athiti-Regular.ttf);
+  font-style: normal;
+  font-variant:initial;
+}     
+@font-face{
+  font-family: Athiti-SemiBold;
+  src: url(../fonts/Athiti-SemiBold.ttf);
+  font-style: normal;
+  font-variant:initial;
+}        
+@font-face{
   font-family: BebasNeue-Regular;
   src: url(../fonts/BebasNeue-Regular.ttf);
   font-style: normal;
@@ -87,9 +99,10 @@ body.game-info{
 }   
 body.account-info{
   background: url(../images/login-bg1.png)  , url(../images/bg2-2.png)  , url(../images/bg-account.png) ; 
-  background-size: 90%  auto , 100% auto  , 100% auto  !important;
+  background-size: 90%  100% ,   100% 100% ,  100% 100% !important;
   background-position: left top , center , center  !important;
   background-repeat: no-repeat , no-repeat , no-repeat !important; 
+  height: 100%;
 }  
 header{  
   position: relative; 
@@ -847,6 +860,21 @@ img.character1{
 .account-info main{
   margin-top: 35px;
 }
+.accountx h6{
+  width: 238px;
+  font-size: 12px;
+  line-height: 18px; 
+  font-family: Kanit-Regular;  
+  letter-spacing: 0.16em;
+  text-transform: capitalize; 
+  color: #918B77;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+
 .accountx h1{
   background-repeat: no-repeat !important;
   background-position: left center !important;
@@ -877,20 +905,297 @@ img.character1{
   font-family: Kanit-Regular; 
   letter-spacing: 0.16em;
   text-transform: uppercase; 
-  color: #FFF96F;
+  color: #FFF96F; 
+} 
+.accountx .profile{
+  width: 100%;
+  height: 137px;
+  padding: 28px 21px;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+  background-size: 100% 137px !important;
+  background: url(../images/list-bg2.png) ;
+}
+.accountx .profile > .row div{
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-position: center right  !important;
+  background-size: auto 100% !important;
+  background: url(../images/line3.png);   
+}
+.accountx .profile > .row div:last-child{ 
+  background: unset !important;   
+}
+.accountx .profile > .row div h4{
+  text-align: center; 
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px; 
+  color: #65E46A;
+  font-family: Kanit-Regular;  
+}
+.accountx .profile > .row div h5{
+  text-align: center;
+  font-family: Kanit-Regular;  
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px; 
+  color: #B4B4B4;
 
+}
+.accountx .profile > .row div:first-child{  
+  position: relative;
+  padding-left: 125px;
+}
+.accountx .profile > .row div:first-child img{ 
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 81px;
+  height: 81px;
+} 
+.accountx .profile > .row div:first-child h3{  
+  position: relative; 
+  font-family: Kanit-Regular;  
+  font-size: 20px;
+  line-height: 30px; 
+  color: #B4B4B4;
+
+}
+.accountx .profile > .row div:first-child h4{  
+  position: relative; 
+  font-family: Kanit-Regular;  
+  font-size: 20px;
+  line-height: 30px; 
+  color: #5C5C5C;
+  text-align: left !important;
+}
+.subtract{ 
+  margin-top: 25px;
+  font-size: 36px;
+  line-height: 95px;
+  font-family: BebasNeue-Regular;
+  padding-left: 135px;
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-position: center  !important;
+  background-size: 100% 95px !important;
+  height: 95px;
+  margin-bottom: 30px;
+}
+.subtract .box{ 
+  position: absolute; 
+  left: 25px;
+  top: 7px;  
+}
+.subtract img{  
+  width: 55px;
+  height: 55px; 
+  margin-bottom: 5px;
+  display: block;
+  margin: auto;
+}
+.subtract.bg1{ 
+  background: url(../images/Subtract1.png);   
+  color: #436874;
+}
+.subtract.bg2{ 
+  background: url(../images/Subtract2.png);   
+  color: #968137;
+}
+.subtract h4{   
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px; 
+  color: #436874;
+  text-align: center;
+}
+.subtract.bg1 h4{    
+  color: #436874; 
+}
+.subtract.bg2 h4{    
+  color: #968137; 
+}
+.accountx .des{
+  position: relative;
+  background-repeat: no-repeat !important;
+  background-position: center right  !important;
+  background-size:  100% auto !important;
+  background: url(../images/clip-bg2.png);   
+  height: 232px;
+  padding: 30px 60px;
+}
+.accountx .des p{ 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #B0B5BA;
+  font-family: Kanit-Regular;
+  margin-bottom: 24px;
+}  
+.accountx .des p span{ 
+  float: right;
+  color: #337E36;
+} 
+.accountx hr{
+  background-repeat: no-repeat !important;
+  background-position: center right  !important;
+  background-size:  100% auto !important;
+  background: url(../images/line5x.png);    
+  height: 2px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.accountx .tablex{ 
+  padding: 5px 50px 30px;
+  background-repeat: no-repeat !important;
+  background-position: center  !important;
+  background-size: auto 100% !important;
+  background: url(../images/clip-bg3.png);    
+}  
+.accountx .tablex h3{ 
+  font-size: 16px;
+  line-height: 24px; 
+  color: #728573;
+  font-family: Kanit-Regular; 
+  margin-bottom: 10px;
+}    
+.accountx .tablex .table thead tr th{
+  border-bottom: 0px;
+  border-top: 0px;
+  background: transparent;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  font-family: Kanit-Regular;  
+  color: #374137;
+  text-align: center;
+  vertical-align: middle;
+
+}
+.accountx .tablex .table tbody tr{
+  background: rgba(30, 40, 31, 0.78);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.accountx .tablex .table tbody tr td{
+  border-bottom: 0px;
+  border-top: 0px;
+  padding: 8px 5px !important;
+  font-family: Athiti-Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 19px; 
+  text-align: center;
+  vertical-align: middle;
+} 
+.accountx .tablex .table tbody tr td:first-child{
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important; 
+}
+.accountx .tablex .table tbody tr td:last-child{
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important; 
+}
+.accountx .tablex .table tbody tr td:nth-child(1){
+  color: #898989;
+}
+.accountx .tablex .table tbody tr td:nth-child(3){
+  color: #898989;
+}
+.accountx .tablex .table tbody tr td:nth-child(4){
+  color: #898989;
+}
+.accountx .tablex .table tbody tr td:nth-child(5){
+  color: #998960;
+}
+.accountx .tablex .table tbody tr td:nth-child(6){
+  color: #696969;
+}
+.accountx .tablex .table tbody tr td.type1{
+  color: #FF773D;
+}
+.accountx .tablex .table tbody tr td.type2{
+  color: #65E46A;
+} 
+.accountx .tablex .table tbody tr td.type3{
+  color: #FF543D;
+} 
+.accountx .tablex .table tbody tr td.type4{
+  color: #59B8ED;
+}
+ 
+.account-info main + small{
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.nav-user{
+  margin-right: 0px !important;
+} 
+.nav-user .btn{
+  color: #65E46A !important;
+  font-size: 20px;
+  line-height: 30px; 
+  color: #65E46A; 
+}
+.nav-user .btn:active{
+  outline: none !important;
+  box-shadow: none !important;
+} 
+.nav-user .btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.nav-user .btn:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.nav-user .dropdown-menu{
+  background: #1E1E1E;
+}
+.nav-user .dropdown-menu .dropdown-item{
+  color: #fff;
+}
+.nav-user .dropdown-menu .dropdown-item:hover{
+  color: #65E46A;
+  background: #030303;
+}
+.subtract {
+  padding-left: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.subtract img {
+  width: 40px;
+  height: 40px; 
+}
+.subtract h4 { 
+  font-size: 12px; 
+}
+.accountx .profile{
+  height: auto;
 }
 
 
 
 
-/* transition: .33s all ease-out;  
 
-  
+/* 
+  transition: .33s all ease-out;   
   font-family: Kanit-Regular;  
   font-family: BebasNeue-Regular;
   
-  */
+*/
 
 @media only screen and (max-width: 991px) { /* MOBILE */
   main {
@@ -1180,4 +1485,81 @@ img.character1{
     position: fixed;
     bottom: 0;
   }  
+    
+  body.account-info{ 
+    background-size: auto  100% , auto 100% , auto 100% !important;
+    background-position: left top , center , center  !important;
+    background-repeat: no-repeat , no-repeat , no-repeat !important; 
+    height: 100%;
+  }  
+  .account-info main .accountx{
+    padding-left: 15px !important;
+  }
+  .accountx h1 { 
+    font-size: 26px;
+    line-height: 28px; 
+    padding: 14px 20px;
+    margin-bottom: 15px;
+  }
+  .accountx .p-account{
+    width: 100%;
+  }
+  .accountx h6{
+    width: 100%;
+  }
+  .accountx .profile > .row div:first-child img { 
+    left: 20px; ;
+    width: 60px;
+    height: 60px;
+  }
+  .accountx .profile > .row div:first-child { 
+    padding-left: 95px;
+  }
+  .accountx .profile > .row div:first-child h3 { 
+    font-size: 18px;
+    line-height: 22px; 
+  }
+  .accountx .profile > .row div:first-child h4 { 
+    font-size: 18px;
+    line-height: 22px; 
+  }
+  .accountx .profile > .row div h4 { 
+    margin-bottom: 5px; 
+    font-size: 16px;
+    line-height: 20px; 
+    margin-top: 15px;
+  }
+  .accountx .profile > .row div h5 { 
+    margin-bottom: 10px; 
+    font-size: 16px;
+    line-height: 20px; 
+  }
+  .accountx .profile > .row div {
+    background: unset !important;
+  }
+  .subtract{
+    line-height: 75px;
+  }
+  .accountx .des { 
+    height: auto;
+    padding: 15px 20px; 
+    background-size: auto 100% !important;
+  }
+  .accountx .des p{ 
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .accountx .tablex {
+    padding: 5px 10px 10px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% auto !important;
+    background: url(../images/clip-bg3.png);
+  }
+   
+  .accountx .tablex .table thead tr th{
+    padding: 4px; 
+  }
+
+
 }
