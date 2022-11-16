@@ -104,6 +104,13 @@ body.account-info{
   background-repeat: no-repeat , no-repeat , no-repeat !important; 
   height: 100%;
 }  
+body.account-info-tele{
+  background: url(../images/login-bg1.png)  , url(../images/bg2-2.png)  , url(../images/wallpaperbetter-acc.png) ; 
+  background-size: 100%  100% ,  100% 100% , auto 100%  !important;
+  background-position: right top , center , center right !important;
+  background-repeat: no-repeat , no-repeat , no-repeat !important;  
+  height: 100%;
+}  
 header{  
   position: relative; 
   padding-top: 34px;
@@ -856,10 +863,7 @@ img.character1{
 }
 .account-info main{
   margin-top: 35px;
-}
-.account-info main{
-  margin-top: 35px;
-}
+} 
 .accountx h6{
   width: 238px;
   font-size: 12px;
@@ -1185,15 +1189,279 @@ img.character1{
 .accountx .profile{
   height: auto;
 }
+.border-acc{
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: auto 100% !important;
+  background: url(../images/linex3.png);     
+  margin-bottom: 100px;
+}
+.accountx.mb-0 h1{
+  margin-bottom: 0px !important;
+} 
+.main-acc{
+  padding-right: 80px;
+  cursor: pointer;
+}
+.head-acc{
+  position: relative;
+  margin-top: 20px;
+}
+.head-acc .img-h{ 
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 70px 70px !important;
+  background: url(../images/new-border3.png);   
+}
+.head-acc .img-h img{
+  padding: 5px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  height: 100%;
+}
+.head-acc h3{
+  padding-left: 90px;
+  font-size: 20px;
+  line-height: 40px;
+  font-family: Kanit-Regular;  
+  color: #728573; 
+}
+.head-acc .health-bar{ 
+  height: 16px;
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 100% 16px !important;
+  background: url(../images/health-bar1.png);   
+  margin-left: 90px;
+  margin-right: 110px;
+
+}
+.head-acc .health-bar div{ 
+  height: 16px;
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 100% 16px !important;
+  background: url(../images/health-status.png);   
+}
+.head-acc .health-bar div h5{ 
+  position: absolute;
+  right: 55px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px; 
+  color: #738573;
+  font-family: Kanit-Regular;  
+}
+
+.head-acc .bt{ 
+  top: 35px;
+  right: 0;
+  position: absolute;
+  width: 29px;
+  height: 31px;  
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 29px 31px !important;
+  background: url(../images/refill-bg3.png);   
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-acc .bt.active img {
+  transform: rotate(180deg);
+}
+.main-acc .detail{
+  margin-top: 30px; 
+  display: none;
+}
+.main-acc .bt.active + .detail {
+  display: block; 
+}
+.main-acc .detail ul{
+  padding-left: 0px;
+  list-style: none;
+}
+.main-acc .detail ul li{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #5B5E61;
+  font-family: Kanit-Regular;  
+}
+.main-acc .detail ul li span{
+  float: right;
+  font-family: Kanit-Regular;  
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #738573;
+} 
+.account-info-tele main + small{
+  position: relative;
+  margin-bottom: 15px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-bottom: 15px;
+}
+.main-cha{
+  padding-left: 100px;
+  padding-right: 100px;
+  position: relative;
+}
+.main-cha .sub-cha{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 363px; 
+  margin-top: 30px;
+}
+.main-cha .sub-cha h3{
+  font-family: Kanit-Regular;  
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px; 
+  color: #738573; 
+  text-align: center;
+  margin-top: 40px;
+}
 
 
-
+.bootstrap-select.select-type { 
+  border-radius: 5px;
+  height: 36px;  
+  background: url(../images/border-text3.png);
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 363px 35px !important;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+}
+.bootstrap-select.select-type .dropdown-menu.inner { 
+  font-size: 12px;
+  line-height: 15px; 
+  color: #FFFFFF;
+  font-family: Kanit-Regular;
+  text-align: center;
+}
+.bootstrap-select.select-type .dropdown-menu {
+  background-color: #37843A;
+  text-align: center;
+}
+.bootstrap-select.select-type .dropdown-item {
+  font-size: 12px;
+  line-height: 15px; 
+  color: #FFFFFF;
+  font-family: Kanit-Regular;
+  text-align: center;
+}
+.bootstrap-select.select-type .dropdown-item:hover { 
+  color: #fff; 
+  text-align: center;
+  background-color: #030303;
+}
+.bootstrap-select .btn{
+  font-family: Kanit-Regular;
+  font-size: 12px;
+  line-height: 20px; 
+  color: #FFFFFF;
+  background: url(../images/border-text3.png);
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 100% 35px !important;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0px;
+  height: 36px;  
+  font-family: Kanit-Regular;
+  text-align: center;
+} 
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle { 
+  color: #fff; 
+  background: url(../images/border-text3.png);
+  background-repeat: no-repeat !important;
+  background-position: right  center !important;
+  background-size: 100% 35px !important;
+  width: 100%;
+  height: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+.bootstrap-select .btn .filter-option-inner-inner{
+  text-align: center;font-size: 10px;
+  line-height: 22px; 
+  color: #374137;
+  font-size: 14px;
+}
+.main-cha .gc{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  height: 31px;
+  width: 395px; 
+  background: url(../images/login-btn1.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 31px !important;
+  padding: 3px 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Kanit-Regular; 
+  color: #DFBF4C;
+  margin-bottom: 50px;
+}
+.main-cha .gc span{
+  float: right;
+} 
+.main-cha .btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 156px;
+  height: 33px;
+  font-family: Kanit-Regular;   
+  background: url(../images/login-btn1.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 33px !important;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #D6D6D6;
+}
+.main-cha h2{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px; 
+  text-transform: capitalize; 
+  color: #BF9898; 
+  font-family: Kanit-Regular;  
+  margin-top: 30px;
+}
+.main-cha h2 span{ 
+  color: #A74A4A; 
+}
 
 
 /* 
   transition: .33s all ease-out;   
   font-family: Kanit-Regular;  
   font-family: BebasNeue-Regular;
+  xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
   
 */
 
@@ -1560,6 +1828,31 @@ img.character1{
   .accountx .tablex .table thead tr th{
     padding: 4px; 
   }
-
-
+  .main-cha {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+  } 
+  .account-info-tele main .accountx{
+    padding-left: 15px !important;
+  }
+  .border-acc { 
+    background: transparent !important; 
+  }
+  .main-acc {
+    padding-right: 0px;
+  }
+  .border-acc { 
+    margin-bottom: 30px;  
+  }
+  .main-cha .sub-cha { 
+    width: 100%;
+    margin-top: 10px;
+  } 
+  .main-cha .sub-cha h3 { 
+    margin-top: 20px;
+  }
+  .main-cha .gc {
+    width: 100%;
+  }
 }
