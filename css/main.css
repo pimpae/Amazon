@@ -111,6 +111,13 @@ body.account-info-tele{
   background-repeat: no-repeat , no-repeat , no-repeat !important;  
   height: 100%;
 }  
+body.news-info{
+  background: url(../images/bg-info.png) , url(../images/d-after.png)   , url(../images/game-info2.png) ; 
+  background-size: 100% auto , 100% auto , 100% auto  !important;
+  background-position: top center , center , center !important;
+  background-repeat: no-repeat , no-repeat , no-repeat !important;
+  overflow: hidden;
+}   
 header{  
   position: relative; 
   padding-top: 34px;
@@ -127,7 +134,7 @@ body.home header{
   margin-bottom: 120px;
 }
 body.news header{  
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 body.game-info header{  
   margin-bottom: 80px;
@@ -1195,6 +1202,7 @@ img.character1{
   background-size: auto 100% !important;
   background: url(../images/linex3.png);     
   margin-bottom: 100px;
+  min-height: 722px;
 }
 .accountx.mb-0 h1{
   margin-bottom: 0px !important;
@@ -1854,5 +1862,176 @@ img.character1{
   }
   .main-cha .gc {
     width: 100%;
+  }
+  .border-acc{ 
+    min-height: unset;
+  }
+}
+@media only screen and (width: 768px) { /* IPAD */
+  .main-cha {
+    padding-left: 40px;
+    padding-right: 40px; 
+  }
+  .main-acc {
+    padding-right: 0px;
+    cursor: pointer;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link { 
+    border-top: 2px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .navbar .navbar-collapse {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .border-acc{ 
+    min-height: unset;
+  }
+  .bootstrap-select{
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 363px;
+  }
+  :not(.input-group)>.bootstrap-select.form-control:not([class*=col-]) {
+    width: 363px !important;
+  }
+  img.character1 {
+    height: 344px !important;
+    width: auto !important;
+  }
+  body.home{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important;  
+  }
+  body.home header {
+    margin-bottom: 50px;
+  }
+  .home-character {
+    overflow: hidden;
+    position: absolute;
+    width: 300px;
+    z-index: 11;
+    display: block !important; 
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0;
+    right: 0;
+  }
+  .home-box1 img{
+    height: 255px;
+  }
+  body.login{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important;  
+  } 
+  .tabs-news{
+    margin-top: 30px;
+  }
+  .tabs-news li {
+    width: 20%;
+  }
+  .img-view {
+    height: 348px;
+    padding: 10px;
+  }
+}
+@media only screen and (width: 1024px) { /* IPAD PRO */
+  .main-cha {
+    padding-left: 40px;
+    padding-right: 40px; 
+  }
+  .main-acc {
+    padding-right: 0px;
+    cursor: pointer;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link { 
+    border-top: 2px solid transparent;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+  .navbar .navbar-collapse {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .border-acc{ 
+    min-height: unset;
+  }  
+  main {
+    padding-left: 40px;
+    padding-right: 40px; 
+  }
+  body.download{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important; 
+    height: 100% !important;
+    overflow: unset !important;
+  }
+  .box-file-download img {
+    width: 125px;
+  }
+  .file-program li span {
+    padding-left: 1px;
+    padding-right: 20px;
+  }
+  body.game-info{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important; 
+    height: 100% !important;
+    overflow: unset !important;
+  }
+  img.character1 {
+    height: 344px !important;
+    width: auto !important;
+  }
+  .game-info footer{
+    position: relative;
+    margin-top: 50px;
+  }
+  body.home{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important;  
+  }
+  body.home header {
+    margin-bottom: 50px;
+  }
+  .home-character {
+    overflow: hidden;
+    position: relative;
+    width: 500px;
+    z-index: 11;
+    display: block;
+    margin-top: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body.login{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important;  
+  } 
+  .login-box { 
+    margin-top: 120px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0px 50px 50px;
+  }
+  body.news{ 
+    background-size: auto 100%  , auto 100%  , auto 100%   !important;  
+    overflow: unset !important;
+    height: 100%;
+  } 
+  .img-patch {
+    height: unset !important;
+  }
+  .news footer{
+    position: relative;
+    margin-top: 50px;
   }
 }
