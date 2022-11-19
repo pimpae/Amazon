@@ -642,16 +642,18 @@ main{
   text-align: center;
   font-family: Kanit-Regular;  
   display: block; 
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px; 
   color: #D6D6D6;
   transition: .33s all ease-out;
 }
 .login-box form .btn-login{ 
   background: url(../images/login-btn1.png); 
+  background-size: 110% auto !important; 
 }
 .login-box form .btn-register{ 
   background: url(../images/login-btn2.png); 
+  background-size: 110% auto !important; 
   color: #929792;
 }
 
@@ -660,6 +662,7 @@ main{
 }
 .login-box form .btn-facebook{ 
   background: url(../images/facebook-btn1.png); 
+  background-size: 96% auto !important; 
   color: #D6D6D6;
 }
 .login-box form .btn-facebook img{ 
@@ -2060,6 +2063,7 @@ hr.lix6{
 }
 
 
+
 /* 
   transition: .33s all ease-out;   
   font-family: Kanit-Regular;  
@@ -2073,6 +2077,21 @@ hr.lix6{
 */
 
 @media only screen and (max-width: 991px) { /* MOBILE */
+  .login-box form .btn-facebook { 
+    background-size: 105% auto !important; 
+  }
+  .pad-login > div{
+    padding: 0px !important;
+  }
+  .login-box form .btn-login{ 
+    margin-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .login-box form .btn-register{  
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .kingpin_character{
     display: none;
   }
