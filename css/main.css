@@ -1422,7 +1422,7 @@ img.character1{
   margin-top: 40px;
   height: 31px;
   width: 395px; 
-  background: url(../images/login-btn1.png);
+  background: url(../images/list-bg4.png);
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: 100% 31px !important;
@@ -1437,7 +1437,7 @@ img.character1{
 .main-cha .gc span{
   float: right;
 } 
-.main-cha .btn{
+.main-cha .btn-log{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -1669,6 +1669,9 @@ hr.lix6{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 15px;
+}
+.login footer{
+  border: none !important;
 }
 
 /* 
@@ -2158,7 +2161,7 @@ hr.lix6{
   }
   .cash-box .m::before {
     content: unset !important;
-  }
+  } 
 }
 @media only screen and (width: 768px) { /* IPAD */
   .main-cha {
