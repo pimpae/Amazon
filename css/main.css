@@ -2678,6 +2678,15 @@ hr.lix6{
   .clip-bg{
     height: 300px;
   }
+  .main-refilll .pay-type {
+    display: flex;
+  }
+  body.refill{
+    height: 100vh !important;
+  }
+  body.refill.refill4{
+    height: 100% !important;
+  }
 }
 @media only screen and (width: 1024px) { /* IPAD PRO */
   .main-cha {
@@ -2787,6 +2796,14 @@ hr.lix6{
   }
   body.refill {
     height: 100vh !important;
+  }
+  .nav-item.nav-refill .btn { 
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px; 
+  }
+  .nav-user .btn { 
+    font-size: 16px; 
   }
 }
 @media only screen and (max-width: 380px) { /* MOBILE */  
