@@ -119,7 +119,13 @@ body.news-info{
   height: 100%;
   overflow: unset !important;
 }   
-
+ 
+body.refill{
+  background: url(../images/wallpaperbetter2.png) ; 
+  background-size: 100% auto !important;
+  background-position: top center  !important;
+  background-repeat: no-repeat !important;  
+}  
 /* url(../images/mid-page2.png)   url(../images/bg-info.png) ,  */
 
 
@@ -1673,7 +1679,24 @@ hr.lix6{
 .login footer{
   border: none !important;
 }
-
+.nav-item.nav-refill .btn{
+  color: #3C3C3C;
+  font-family: Kanit-Regular; 
+  border-top: 2px solid transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px; 
+  border-radius: 0px;
+}
+.nav-item.nav-refill.active .btn{ 
+  font-size: 20px;
+  border-top: 2px solid #337E36;
+}
+.nav-item.nav-refill:hover .btn{ 
+  font-size: 20px;
+  border-top: 2px solid #337E36;
+}
+ 
 /* 
   transition: .33s all ease-out;   
   font-family: Kanit-Regular;  
