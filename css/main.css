@@ -2008,8 +2008,46 @@ hr.lix6{
   float: right;
   text-align: left;
 }
+.gridx{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 518px;
+  max-width: 100%;
+  height: 287px; 
+  background: url(../images/grid21.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 518px 287px !important;  
+  margin-bottom: 60px;
+  padding-top: 48px;
+  font-family: Kanit-Regular;  
+}
 
-
+.gridx div{
+  display: flex;
+  justify-content: space-around;
+  text-align: center; 
+} 
+.gridx p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #AFCAB0;
+  margin-bottom: 20px;
+  text-align: center;
+} 
+.gridx div:last-child p{
+  font-size: 20px;
+  line-height: 18px; 
+  color: #E4E186;
+}  
+.gridx div:nth-child(3) p{
+  line-height: 20px; 
+} 
+.gridx div:nth-child(4) p{
+  line-height: 18px; 
+}  
 
 
 
@@ -2026,6 +2064,9 @@ hr.lix6{
 */
 
 @media only screen and (max-width: 991px) { /* MOBILE */
+  .gridx{ 
+    background-size: 100%  100% !important;   
+  }
   .bank-des{
     padding: 20px !important;
   }
