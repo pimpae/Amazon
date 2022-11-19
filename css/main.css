@@ -1704,8 +1704,7 @@ hr.lix6{
   }
   body.home{
     background: url(../images/d-after2.png) , url(../images/d-after.png) , url(../images/bg1.png) ; 
-    background-size: auto 100% , auto  100% , auto  100%  !important; 
-    overflow: hidden;
+    background-size: auto 100% , auto  100% , auto  100%  !important;   
   } 
   body.download{
     background: url(../images/bg2-2.png) , url(../images/d-after.png) , url(../images/bg2.png) ; 
@@ -2355,5 +2354,58 @@ hr.lix6{
   .main-new-info{
     width: 100%;
     margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 380px) { /* MOBILE */  
+  .home-character { 
+    width: 70%; 
+    margin: auto;
+    display: block;
+    margin-top: 0px;
+    left: 0;
+    right: 0; 
+  } 
+  .home-box1 { 
+    top: 71px;
+  }
+  .home-box1 .img-fluid {
+    max-width: 89%;
+    height: auto;
+  }
+  .home-box2{
+    bottom: -60px;
+  }
+  .social-mediaf a img {
+    width: 25px;
+    margin-right: 15px;
+    margin-top: -30px;
+  }
+  .login-box h1 { 
+    font-size: 26px;
+    line-height: 30px; 
+    margin-bottom: 10px;
+  }
+  .login-box form input { 
+    height: 40px; 
+    background-size: 100% 40px !important; 
+    margin-bottom: 10px;
+  }
+  .login-box form .forgot { 
+    font-size: 16px;
+    line-height: 20px; 
+  }
+  .login-box form label { 
+    font-size: 16px;
+    line-height: 20px; 
+  }
+  .login-box form .btn {
+    font-size: 16px;
+    height: 35px;
+    line-height: 20px;
+  }
+  .social-media h3 {
+    margin-top: -10px;
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 }
