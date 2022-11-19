@@ -125,6 +125,7 @@ body.refill{
   background-size: 100% auto !important;
   background-position: top center  !important;
   background-repeat: no-repeat !important;  
+  height: 100%;
 }  
 /* url(../images/mid-page2.png)   url(../images/bg-info.png) ,  */
 
@@ -1689,14 +1690,211 @@ hr.lix6{
   border-radius: 0px;
 }
 .nav-item.nav-refill.active .btn{ 
-  font-size: 20px;
+  color: #fff;
   border-top: 2px solid #337E36;
 }
 .nav-item.nav-refill:hover .btn{ 
-  font-size: 20px;
+  color: #fff;
   border-top: 2px solid #337E36;
 }
- 
+.nav-item.nav-refill .dropdown-menu{ 
+  background: #1E1E1E; 
+}
+.nav-item.nav-refill .dropdown-menu .dropdown-item{ 
+  color: #fff;
+  font-family: Kanit-Regular;   
+}
+.nav-item.nav-refill .dropdown-menu .dropdown-item:hover{  
+  color: #65E46A;
+  background: #030303;  
+}
+
+.refill main > .container{
+  max-width: 777px;
+  display: block;
+  margin: 50px auto auto auto;
+}
+.main-refilll h1{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Kanit-Regular;   
+  color: #D6D6D6;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.main-refilll  .pay-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-refilll  .pay-type .btn{ 
+  width: 157px;
+  height: 43px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 3px;
+  background: url(../images/refill-bg-31.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 157px 43px !important; 
+  border-radius: 0px;
+}
+.main-refilll .pay-type .btn img{ 
+  max-height: 37px;
+} 
+.main-refilll .pay-type .btn:hover{  
+  background: url(../images/refill-bg-31.png) ,  #317934 !important; 
+} 
+.main-refilll hr.hr1{  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 1px;
+  background: url(../images/line13.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 1px !important; 
+} 
+.main-refilll h2{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Kanit-Regular;    
+  color: #549556;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.main-refilll input{ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 430px; 
+  font-family: Kanit-Regular;   
+  height: 42px; 
+  background: url(../images/border-text1.png) #0A100A;
+  background-repeat: no-repeat !important; 
+  background-position:  center !important;
+  background-size: 430px 42px !important; 
+  border: none;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #394938;
+  font-size: 14px;
+  line-height: 21px;
+}
+.main-refilll input::placeholder{  
+  font-family: Kanit-Regular;    
+  text-align: center;
+  color: #394938;
+}
+.main-refilll input:active{ 
+  background-color: #000000;
+}
+.main-refilll input:focus{ 
+  background-color: #000000;
+  box-shadow: none;
+}
+
+.main-refilll .btn-log {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 156px;
+  height: 33px;
+  font-family: Kanit-Regular;
+  background: url(../images/login-btn1.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 33px !important;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D6D6D6;
+}
+.main-refilll hr.hr2{  
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 1px;
+  background: url(../images/line15.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% 1px !important; 
+}
+.main-refilll h3{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Kanit-Regular;    
+  color: #549556;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.main-refilll .exchange{
+  font-family: Kanit-Regular;  
+  padding-top: 24px;
+  width: 525px;
+  height: 84px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: url(../images/acc-bg2.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 525px 84px !important; 
+  font-size: 24px;
+  line-height: 36px; 
+  color: #738573;
+}
+.main-refilll .exchange img{
+  height: 14px;
+  margin-left: 45px;
+  margin-right: 45px;
+} 
+.main-refilll h2{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px; 
+  text-transform: capitalize; 
+  color: #BF9898; 
+  font-family: Kanit-Regular;  
+  margin-top: 30px;
+}
+.main-refilll h2 span{ 
+  color: #A74A4A; 
+}
+
+.main-refilll h5 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #D6D6D6;
+  font-family: Kanit-Regular;
+}
+
+.main-refilll h5 {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #D6D6D6;
+  font-family: Kanit-Regular;
+}
+.main-refilll h5 a {
+  color: #6395DF;
+}
+.main-refilll h6 {
+  font-family: Kanit-Regular;
+  color: #65E46A;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
 /* 
   transition: .33s all ease-out;   
   font-family: Kanit-Regular;  
@@ -2184,6 +2382,32 @@ hr.lix6{
   .cash-box .m::before {
     content: unset !important;
   } 
+  body.refill{
+    background: url(../images/wallpaperbetter2.png) ; 
+    background-size: auto 100%  !important;
+    background-position: top center  !important;
+    background-repeat: no-repeat !important;  
+    height: 100%;
+  }  
+  .refill main > .container{
+    max-width: 100%; 
+    margin: 20px auto auto auto;
+  }  
+  .main-refilll  .pay-type{
+    display: block;  
+  } 
+  .main-refilll  .pay-type .btn{
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  } 
+  .main-refilll input{  
+    width: 100%;  
+  }
+  .main-refilll .exchange{ 
+  width: 100%; 
+  }
 }
 @media only screen and (width: 768px) { /* IPAD */
   .main-cha {
