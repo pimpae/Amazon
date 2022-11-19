@@ -121,10 +121,10 @@ body.news-info{
 }   
  
 body.refill{
-  background: url(../images/wallpaperbetter2.png) ; 
-  background-size: 100% auto !important;
-  background-position: top center  !important;
-  background-repeat: no-repeat !important;  
+  background: url(../images/mid-page2.png)  , url(../images/wallpaperbetter2.png) ; 
+  background-size:  100% 163px , 100% 100% !important;
+  background-position: bottom center  ,top center  !important;
+  background-repeat: no-repeat , no-repeat !important;  
   height: 100%;
 }  
 /* url(../images/mid-page2.png)   url(../images/bg-info.png) ,  */
@@ -1763,7 +1763,7 @@ hr.lix6{
   font-family: Kanit-Regular;    
   color: #549556;
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 .main-refilll input{ 
   display: block;
@@ -1853,16 +1853,17 @@ hr.lix6{
   margin-left: 45px;
   margin-right: 45px;
 } 
-.main-refilll h2{
+.main-refilll h4{
   font-weight: 600;
   font-size: 15px;
   line-height: 24px; 
   text-transform: capitalize; 
-  color: #BF9898; 
+  color: #BF9898 !important; 
   font-family: Kanit-Regular;  
   margin-top: 30px;
+  text-align: center;
 }
-.main-refilll h2 span{ 
+.main-refilll h4 span{ 
   color: #A74A4A; 
 }
 
@@ -1886,6 +1887,13 @@ hr.lix6{
 .main-refilll h5 a {
   color: #6395DF;
 }
+.refill small{  
+  position: relative !important;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .main-refilll h6 {
   font-family: Kanit-Regular;
   color: #65E46A;
@@ -1894,6 +1902,116 @@ hr.lix6{
   line-height: 24px;
   text-align: center;
 }
+.chara11{
+  width: 366px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.chara11 img.img{
+  width: auto;
+  max-width: 100%;
+  height: 257px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -40px;
+}
+.chara11 .process{
+  position: absolute;
+  width: 366px;
+  height: 34px;  
+  display: block;  
+  bottom: 50px; 
+  background: rgba(0, 0, 0, 0.59);
+  border-radius: 34px;
+  font-size: 14px;
+  line-height: 35px; 
+  color: #A2B4A2;
+  text-align: center;
+  font-family: Kanit-Regular;   
+}
+.chara11 .process img.chk{
+  width: 16px;
+  height: 16px;
+}
+.resu{ 
+  width: 373px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Kanit-Regular;  
+  color: #738573;
+} 
+.resu p span{ 
+  float: right;
+}
+.sum-refill{
+  position: relative;
+  width: 527px;
+  height: 30.63px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/list-bg4.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 527px 30.63px !important; 
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  line-height: 30px; 
+  color: #DFBF4C;
+  font-family: Kanit-Regular;  
+}
+.sum-refill span{ 
+  float: right;
+}
+.refill header { 
+  z-index: 34;
+}
+.main-refilll .h4x{
+  font-weight: 400;
+  font-size: 14px !important;
+  line-height: 21px !important; 
+  color: #738573 !important;
+  font-family: Kanit-Regular;  
+}
+.bank-des{ 
+  margin-top: 30px;
+  position: relative;
+  width: 730px;
+  max-width: 100%;
+  height: 139px; 
+  background: url(../images/text-header3.png);
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 730px 139px !important;  
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.bank-des p{ 
+  font-family: Kanit-Regular;  
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 24px; 
+  color: #AFCAB0; 
+}
+.bank-des span{ 
+  float: right;
+  text-align: left;
+}
+
+
+
+
 
 /* 
   transition: .33s all ease-out;   
@@ -1908,6 +2026,18 @@ hr.lix6{
 */
 
 @media only screen and (max-width: 991px) { /* MOBILE */
+  .bank-des{
+    padding: 20px !important;
+  }
+  .sum-refill{
+    max-width: 100%;
+  }
+  .main-refilll h5 { 
+    font-size: 10px;  
+  }
+  .main-refilll h4 { 
+    font-size: 14px; 
+  }
   main {
     padding-left: 0px;
     padding-right: 0px;
