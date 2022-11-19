@@ -1714,6 +1714,9 @@ hr.lix6{
   display: block;
   margin: 50px auto auto auto;
 }
+.main-refilll{ 
+  position: relative;
+}
 .main-refilll h1{
   font-weight: 400;
   font-size: 20px;
@@ -2048,7 +2051,13 @@ hr.lix6{
 .gridx div:nth-child(4) p{
   line-height: 18px; 
 }  
-
+.kingpin_character{
+  position: absolute;
+  left: -75px;
+  top: 220px;
+  width: 234px;
+  height: 381px;
+}
 
 
 /* 
@@ -2064,6 +2073,9 @@ hr.lix6{
 */
 
 @media only screen and (max-width: 991px) { /* MOBILE */
+  .kingpin_character{
+    display: none;
+  }
   .gridx{ 
     background-size: 100%  100% !important;   
   }
@@ -2772,6 +2784,9 @@ hr.lix6{
   .main-new-info{
     width: 100%;
     margin-top: 100px;
+  }
+  body.refill {
+    height: 100vh !important;
   }
 }
 @media only screen and (max-width: 380px) { /* MOBILE */  
