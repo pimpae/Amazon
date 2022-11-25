@@ -133,7 +133,7 @@ body.refill{
 header{  
   position: relative; 
   padding-top: 34px;
-  z-index: 11;
+  z-index: 22;
 }
 body header{ 
   height: 98px;   
@@ -1377,20 +1377,23 @@ img.character1{
   text-align: center;
 }
 .bootstrap-select.select-type .dropdown-menu {
-  background-color: #37843A;
+  background: rgba(12, 12, 12, 0.77);
   text-align: center;
 }
 .bootstrap-select.select-type .dropdown-item {
   font-size: 12px;
-  line-height: 15px; 
-  color: #FFFFFF;
+  line-height: 15px;  
   font-family: Kanit-Regular;
   text-align: center;
+  color: #549556 !important;
+}
+.bootstrap-select.select-type .dropdown-item:hover{ 
+  color: #fff !important;
 }
 .bootstrap-select.select-type .dropdown-item:hover { 
   color: #fff; 
   text-align: center;
-  background-color: #030303;
+  background-color: #37843A;
 }
 .bootstrap-select .btn{
   font-family: Kanit-Regular;
@@ -2366,6 +2369,7 @@ hr.lix6{
   img.character1 {
     height: unset;
     width: 100%;
+    z-index: 2 !important;
   }
   .character-des h3 { 
     background-size: auto 70px !important;
